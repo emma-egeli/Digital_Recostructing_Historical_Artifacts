@@ -1,16 +1,16 @@
-# Digital Restoration of Historical Artifacts 
+# Using AI to Digitally Restore Historical Artifacts 
 ---
 
 ## 🏛️ Overview
 
-This program is a native desktop program designed to that uses Virginia Tech ARC API to digitally analyze historical artifacts and pieces, and restore them to their original state. 
+This program is a native desktop program designed to that uses  original state. 
 
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-- **Runs Natively Within Python** - 
+- **Runs Natively Within the Python IDE** 
 - **User Upload Compatible** - Users can upload an image file from their computer to be restored by the LLM.
 - **Image Download** - Users can download the restored image onto their computer. 
 
@@ -49,15 +49,11 @@ If defects remain unresolved after an iteration:
 5. A comprehensive telemetry log (`restoration_closed_loop_telemetry.json`) is recorded.
 
 
-## Sample Demostration
+## EXAMPLES
 
-## 🖥️ User Interface Overview
+## DEMOSTRATION
 
-The Tkinter desktop interface is organized into a clean, dark-themed workstation layout:
-
-## 📊 Telemetry & Audit Output Example
-
-## 🚀 Getting Started
+## USER GUIDE
 
 ### 1. Prerequisites
 - **Python**: Version 3.10 or higher.
@@ -78,73 +74,6 @@ Create or configure a `.env` file in the root directory with your ARC API key:
 ```env
 ARC_API_KEY="your-api-key-here"
 ```
-
-> **Note:** If an API key is not configured or network access is unavailable, ARCH-RECON will automatically employ its built-in **architectural & optical baseline fallback engine** to ensure uninterrupted functionality. However, this does not do any substantial restoration. 
-
----
-
-## 💻 Usage
-
-### Launch Native Desktop GUI (Default)
-Run the application without arguments to launch the graphical desktop workstation:
-
-```bash
-python main_tkinter.py
-```
-
-1. Click **Choose Artifact Photo...** or select one of the preset sample buttons (**🏛️ Temple**, **🏺 Pottery**, **👑 Pharaoh**, etc.).
-2. Wait for the initial vision diagnostic checklist to populate automatically.
-3. Configure the number of iterations (default: 3) and check **Expand Negative Space** if needed.
-4. Click **🔄 Run Closed-Loop Restoration**.
-5. Watch the live color-coded audit trail update as each issue is resolved.
-6. Toggle between **Restored Artifact** and **Side-by-Side Comparison** and export high-resolution results.
-
----
-
-### Command-Line Interface (CLI Mode)
-
-ARCH-RECON also features a headless command-line interface for automated batch processing, scripting, or remote servers:
-
-#### 1. Full Closed-Loop Restoration via CLI:
-```bash
-python main_tkinter.py --image sample_pottery.jpg --max-iterations 3 --out restored_pottery.png --comp-out comparison_pottery.jpg
-```
-
-#### 2. Computer Vision Forensic Diagnosis Only:
-```bash
-python main_tkinter.py --image sample_temple.jpg --diagnose-only
-```
-
-#### CLI Options Reference:
-| Option | Type | Default | Description |
-| :--- | :---: | :---: | :--- |
-| `--image` | `str` | *None* | Path to input artifact photo (triggers CLI mode). |
-| `--cli` | `flag` | `False` | Run in headless command-line mode. |
-| `--diagnose-only` | `flag` | `False` | Run Phase 1 vision diagnostics only and output raw JSON report. |
-| `--max-iterations` | `int` | `3` | Maximum closed-loop remodification passes. |
-| `--expand-negative-space` | `flag` | `False` | Expand into negative empty air space for severed limbs or architecture. |
-| `--out` | `str` | `closed_loop_restored.png` | Destination filepath for restored image. |
-| `--comp-out` | `str` | `closed_loop_comparison.jpg` | Destination filepath for side-by-side comparison image. |
-
----
-
-## 📁 Repository Structure
-
-```
-Restoration AI/
-├── main_tkinter.py                          # Core Desktop Tkinter App, Closed-Loop Controller & CLI
-├── restoration_closed_loop_telemetry.json  # Comprehensive audit history and diagnostic telemetry
-├── .env                                    # API credentials configuration
-├── sample_temple.jpg                       # Classical Greek monumental temple ruin
-├── sample_pottery.jpg                      # Ancient Attic black-figure amphora
-├── sample_egyptian_pharaoh.jpg             # Egyptian Pharaoh royal limestone bust
-├── sample_chinese_terracotta.jpg           # Qin Dynasty Terracotta Army warrior
-├── sample_mesopotamian_relief.jpg          # Carved limestone bas-relief antiquity
-├── sample_fresco.jpg                       # Ancient wall mural fresco painting
-└── README.md                               # Project documentation
-```
-
----
 
 ## 🛡️ License & Acknowledgments
 

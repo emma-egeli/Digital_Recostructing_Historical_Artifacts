@@ -1,14 +1,15 @@
 # Using AI to Digitally Restore Historical Artifacts 
 ---
 
-## OVERVIEW
+## Overview
 
 This repository contains the files for a native desktop application for demonstrating how LLMs can be used to assist in the restoration of historical artifacts via computer vision anaylsis and dynamic prompting. This application uses Virginia Tech's ARC API to assist in the restoration of damaged historical artifact and return them to their oringal condition. 
 
-NOTE: This program is mostly for demonstration for the potential of LLMs usage in digital restoration and is not yet capable of consistently outputting fully restored historical artifacts every single time. See the "KNOWN ISSUES" section for more information. 
+**NOTE:** This program is mostly for demonstration for the potential of LLMs usage in digital restoration and is not yet capable of consistently outputting fully restored historical artifacts every single time. See the "KNOWN ISSUES" section for more information. 
+
 ---
 
-## PROGRAM FEATURES
+## Program Features
 
 - **Runs Natively Within the Python IDE** - Uses the Tkinter Python package to run natively within the IDE when the program is ran. 
 
@@ -20,30 +21,32 @@ NOTE: This program is mostly for demonstration for the potential of LLMs usage i
 
 ---
 
-## HOW IT WORKS
+## How it Works
 
-### Computer Vision Anaylsis Diagnostics
+**Computer Vision Analysis Diagnostics**
 
-Uses computer vision to determine the type of artifact, the time period and culture it originates from, and assess the damage that needs to be repaired. 
+Uses computer vision to determine the type of artifact, the material(s) is was made with, the time period and culture it originates from, and assess the damage that needs to be repaired. 
 
-### Dynamic Restoration Prompting
+**Dynamic Restoration Prompting**
 
 Uses the results from the computer vision analysis as prompting for restoring the artifact to its original state. 
 
-### Visual Re-Evaluation & Correction
+**Visual Re-Evaluation & Correction**
 
 After an artifact is restored, the LLM will reanalyze the image after to check for any unresolved damage and will re-modify the image to resolve any remaining defects. This process continues as a loop until all defects are resolved or until it reaches the user-specfied maximum number or repasses allowed. 
 
 ---
 
-## EXAMPLE OUTPUTS
+## Example Outputs
 
 **LLM Restoration of Pottery**
 
-**LLM Resotration of Sculputer**
+<img width="1340" height="668" alt="pottery_restored" src="https://github.com/user-attachments/assets/fe38aaf1-c922-4573-8d9d-f5ecd0aae838" />
 
-## VIDEO DEMOSTRATION
 
+**LLM Resotration of Sculpter**
+
+<img width="1333" height="672" alt="bust_restored" src="https://github.com/user-attachments/assets/8b944b56-bc92-415b-bf43-ca997eda7d2f" />
 
 ---
 
@@ -59,4 +62,12 @@ After an artifact is restored, the LLM will reanalyze the image after to check f
 
 **Download Repository**
 
+Install all files in the GitHub repository. 
+
 **Add API Key**
+
+Update the `.env` with your personal API key.
+
+**Run Program in IDE**
+
+Run the `main_tkinter.py` program in the IDE and the application will automatically open. 

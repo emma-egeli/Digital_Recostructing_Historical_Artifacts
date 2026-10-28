@@ -5,7 +5,7 @@
 
 This repository contains the files for a native desktop application for demonstrating how LLMs can be used to assist in the restoration of historical artifacts via computer vision anaylsis and dynamic prompting. This application uses Virginia Tech's ARC API to assist in the restoration of damaged historical artifact and return them to their oringal condition. 
 
-**NOTE:** This program is mostly for demonstration for the potential of LLMs usage in digital restoration and is not yet capable of consistently outputting fully restored historical artifacts every single time. See the "KNOWN ISSUES" section for more information. 
+NOTE: This program is mostly for demonstration for the potential of LLMs usage in digital restoration and is not yet capable of consistently outputting fully restored historical artifacts every single time. See the "KNOWN ISSUES" section for more information. 
 ---
 
 ## PROGRAM FEATURES

@@ -1,0 +1,10 @@
+# Core Dependencies for ARCH-RECON Desktop Historical Artifact Restoration
+
+# Image Processing & Manipulation (PIL)
+Pillow>=10.0.0
+
+# HTTP Requests for ARC Multimodal Vision & Image Edit APIs
+requests>=2.28.0
+
+# Environment Variable & API Key Management (.env)
+python-dotenv>=1.0.0

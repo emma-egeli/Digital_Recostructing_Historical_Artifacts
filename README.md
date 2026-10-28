@@ -64,9 +64,13 @@ After an artifact is restored, the LLM will reanalyze the image after to check f
 
 Install all files in the GitHub repository. 
 
+**Open IDE Install Required Packages**
+
+Use `pip install -r requirements.txt` to install all non-standard Python packages required for the program.
+
 **Add API Key**
 
-Update the `.env` with your personal API key.
+Modify the `.env` file with your personal API key.
 
 **Run Program in IDE**
 
